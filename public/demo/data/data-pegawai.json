@@ -1,0 +1,96 @@
+
+{
+    "data": [
+        {
+          "id": 1,
+          "id_pegawai": "Peg1",
+          "nama_pegawai": "Anthony Gonzalez",
+          "alamat": "Jl. Diponegoro No. 51, Bandung",
+          "nomor_telpon": "08112074573",
+          "tanggal": "15/08/2023",
+          "email": "anthony.gonzalez749@example.com"
+        },
+        {
+          "id": 2,
+          "id_pegawai": "Peg2",
+          "nama_pegawai": "Andrew Robinson",
+          "alamat": "Jl. Sudirman No. 27, Jakarta",
+          "nomor_telpon": "08146888296",
+          "tanggal": "2023-01-24",
+          "email": "andrew.robinson586@example.com"
+        },
+        {
+          "id": 3,
+          "id_pegawai": "Peg3",
+          "nama_pegawai": "Daniel Walker",
+          "alamat": "Jl. Diponegoro No. 17, Jakarta",
+          "nomor_telpon": "08887038525",
+          "tanggal": "2023-06-19",
+          "email": "daniel.walker684@example.com"
+        },
+        {
+          "id": 4,
+          "id_pegawai": "Peg4",
+          "nama_pegawai": "Christopher Garcia",
+          "alamat": "Jl. Veteran No. 64, Semarang",
+          "nomor_telpon": "08729079659",
+          "tanggal": "2023-06-08",
+          "email": "christopher.garcia617@example.com"
+        },
+        {
+          "id": 5,
+          "id_pegawai": "Peg5",
+          "nama_pegawai": "Michael Smith",
+          "alamat": "Jl. Merdeka No. 1, Surabaya",
+          "nomor_telpon": "08291156449",
+          "tanggal": "2024-07-19",
+          "email": "michael.smith613@example.com"
+        },
+        {
+          "id": 6,
+          "id_pegawai": "Peg6",
+          "nama_pegawai": "John Doe",
+          "alamat": "Jl. Sudirman No. 38, Bandung",
+          "nomor_telpon": "08605974644",
+          "tanggal": "2024-08-14",
+          "email": "john.doe428@example.com"
+        },
+        {
+          "id": 7,
+          "id_pegawai": "Peg7",
+          "nama_pegawai": "Jane Doe",
+          "alamat": "Jl. Sudirman No. 8, Bandung",
+          "nomor_telpon": "08951150001",
+          "tanggal": "2024-02-04",
+          "email": "jane.doe873@example.com"
+        },
+        {
+          "id": 8,
+          "id_pegawai": "Peg8",
+          "nama_pegawai": "Jane Doe",
+          "alamat": "Jl. Diponegoro No. 16, Bandung",
+          "nomor_telpon": "08814848807",
+          "tanggal": "2024-09-21",
+          "email": "jane.doe328@example.com"
+        },
+        {
+          "id": 9,
+          "id_pegawai": "Peg9",
+          "nama_pegawai": "James Davis",
+          "alamat": "Jl. Veteran No. 44, Semarang",
+          "nomor_telpon": "08196016266",
+          "tanggal": "2024-06-02",
+          "email": "james.davis724@example.com"
+        },
+        {
+          "id": 10,
+          "id_pegawai": "Peg10",
+          "nama_pegawai": "Sarah Brown",
+          "alamat": "Jl. Raya No. 25, Jakarta",
+          "nomor_telpon": "08633089059",
+          "tanggal": "2024-09-14",
+          "email": "bro.davis724@example.com"
+        }
+    ]
+}
+    
