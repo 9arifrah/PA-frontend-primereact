@@ -14,7 +14,7 @@ import { Toolbar } from 'primereact/toolbar';
 import { classNames } from 'primereact/utils';
 import React, { use, useEffect, useRef, useState } from 'react';
 import { ProductService } from '../../../demo/service/ProductService';
-import { Moment } from 'moment';
+
 
 const DataPegawai = () => {
 
@@ -131,6 +131,7 @@ const DataPegawai = () => {
         return id;
     };
 
+
     const exportCSV = () => {
         dt.current.exportCSV();
     };
@@ -147,11 +148,11 @@ const DataPegawai = () => {
         toast.current.show({ severity: 'success', summary: 'Successful', detail: 'Pegawai Deleted', life: 3000 });
     };
 
-    const onCategoryChange = (e) => {
-        let _pegawai = { ...pegawai };
-        _pegawai['category'] = e.value;
-        setPegawai(_pegawai);
-    };
+    // const onCategoryChange = (e) => {
+    //     let _pegawai = { ...pegawai };
+    //     _pegawai['category'] = e.value;
+    //     setPegawai(_pegawai);
+    // };
 
     const onInputChange = (e, nama_pegawai) => {
         const val = (e.target && e.target.value) || '';
@@ -169,13 +170,13 @@ const DataPegawai = () => {
         setPegawai(_tanggal);
     };
 
-    const onInputNumberChange = (e, nama_pegawai) => {
-        const val = e.value || 0;
-        let _pegawai = { ...pegawai };
-        _pegawai[`${nama_pegawai}`] = val;
+    // const onInputNumberChange = (e, nama_pegawai) => {
+    //     const val = e.value || 0;
+    //     let _pegawai = { ...pegawai };
+    //     _pegawai[`${nama_pegawai}`] = val;
 
-        setPegawai(_pegawai);
-    };
+    //     setPegawai(_pegawai);
+    // };
 
     const leftToolbarTemplate = () => {
         return (
@@ -395,16 +396,22 @@ const DataPegawai = () => {
                         <div className="field">
                             <label htmlFor="alamat">Alamat</label>
                             <InputTextarea id="alamat" value={pegawai.alamat} onChange={(e) => onInputChange(e, 'alamat')} required className={classNames({ 'p-invalid': submitted && !pegawai.alamat })} />
-                            {submitted && !pegawai.nama_pegawai && <small className="p-invalid">Alamat Pegawai is required.</small>}
+                            {submitted && !pegawai.alamat && <small className="p-invalid">Alamat Pegawai is required.</small>}
                         </div>
                         <div className="field">
                             <label htmlFor="nomor_telpon">Nomor Telpon</label>
                             <InputText id="nomor_telpon" value={pegawai.nomor_telpon} onChange={(e) => onInputChange(e, 'nomor_telpon')} required className={classNames({ 'p-invalid': submitted && !pegawai.nomor_telpon })} />
-                            {submitted && !pegawai.nama_pegawai && <small className="p-invalid">Nomor Telpon is required.</small>}
+                            {submitted && !pegawai.nomor_telpon && <small className="p-invalid">Nomor Telpon is required.</small>}
                         </div>
                         <div className="field">
                             <label htmlFor="tanggal">Tanggal</label>
-                            <Calendar id="tanggal" value={pegawai.tanggal} onChange={(e) => onInputDateChange(e, 'tanggal')} showButtonBar showIcon required />
+                            <Calendar id="tanggal" value={pegawai.tanggal} onChange={(e) => onInputDateChange(e, 'tanggal')} showButtonBar showIcon required className={classNames({ 'p-invalid': submitted && !pegawai.tanggal })} />
+                            {submitted && !pegawai.tanggal && <small className="p-invalid">Tanggal is required.</small>}
+                        </div>
+                        <div className="field">
+                            <label htmlFor="email">Email</label>
+                            <InputText id="email" type="text" value={pegawai.email} onChange={(e) => onInputChange(e, 'email')} required className={classNames({ 'p-invalid': submitted && !pegawai.email })} />
+                            {submitted && !pegawai.email && <small className="p-invalid">Email is required.</small>}
                         </div>
 
                         {/* <div className="field">
