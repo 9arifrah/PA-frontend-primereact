@@ -187,6 +187,16 @@ const Crud = () => {
         );
     };
 
+    const codeBodyId = (rowData) => {
+        return (
+            <>
+                <span className="p-column-title">Id</span>
+                {rowData.id}
+            </>
+        );
+    };
+
+
     const codeBodyTemplate = (rowData) => {
         return (
             <>
@@ -313,6 +323,7 @@ const Crud = () => {
                         responsiveLayout="scroll"
                     >
                         <Column selectionMode="multiple" headerStyle={{ width: '4rem' }}></Column>
+                        <Column field="id" header="Code" sortable body={codeBodyId} headerStyle={{ minWidth: '15rem' }}></Column>
                         <Column field="code" header="Code" sortable body={codeBodyTemplate} headerStyle={{ minWidth: '15rem' }}></Column>
                         <Column field="name" header="Name" sortable body={nameBodyTemplate} headerStyle={{ minWidth: '15rem' }}></Column>
                         <Column header="Image" body={imageBodyTemplate}></Column>

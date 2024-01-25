@@ -404,7 +404,7 @@ const DataPegawai = () => {
                             {submitted && !pegawai.nomor_telpon && <small className="p-invalid">Nomor Telpon is required.</small>}
                         </div>
                         <div className="field">
-                            <label htmlFor="tanggal">Tanggal</label>
+                            <label htmlFor="date">Tanggal</label>
                             <Calendar id="tanggal" value={pegawai.tanggal} onChange={(e) => onInputDateChange(e, 'tanggal')} showButtonBar showIcon required className={classNames({ 'p-invalid': submitted && !pegawai.tanggal })} />
                             {submitted && !pegawai.tanggal && <small className="p-invalid">Tanggal is required.</small>}
                         </div>
